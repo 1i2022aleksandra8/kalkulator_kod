@@ -13,7 +13,7 @@
 const num1 = parseInt(prompt('Wpisz pierwszą liczbę: '));
 const num2 = parseInt(prompt('Wpisz pierwszą liczbę: '));
 const sign = prompt('Podaj znak działania jakie chcesz wykonać (+, -, * lub / )');
-if (isNaN(number1) || isNaN(number2)) {
+if (isNaN(num1) || isNaN(num2)) {
     document.write('<p>wprowadź poprawne liczby</p>');
 }
 switch(sign){
@@ -34,7 +34,7 @@ switch(sign){
     case '/':
     number 2 === 0
         ? document.write('<p>Nie można dzielić przez 0</p>')
-        : document.write('<p>Wynik dzielenia to: ' + number1 / number2 + '</p>');
+        : document.write('<p>Wynik dzielenia to: ' + num1 / num2 + '</p>');
 
 
     default:
