@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+
+
+    <script>
+const num1 = parseInt(prompt('Wpisz pierwszą liczbę: '));
+const num2 = parseInt(prompt('Wpisz pierwszą liczbę: '));
+const sign = prompt('Podaj znak działania jakie chcesz wykonać (+, -, * lub / )');
+if (isNaN(number1) || isNaN(number2)) {
+    document.write('<p>wprowadź poprawne liczby</p>');
+}
+switch(sign){
+    case '+':
+    document.write('<p>' + (num1+num2) + '</p>')
+    break;
+
+    case '-':
+    document.write('<p>' + (num1-num2) + '</p>')
+    break;
+
+
+    case '*':
+    document.write('<p>' + (num1*num2) + '</p>')
+    break;
+
+
+    case '/':
+    document.write('<p>' + (num1/num2) + '</p>')
+    break;
+
+
+    default:
+    console.log('invalid operator');
+    break;
+}
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
